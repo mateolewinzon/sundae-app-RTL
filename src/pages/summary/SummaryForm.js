@@ -1,16 +1,20 @@
 import React, { useState } from "react";
 import { Container, Col, Row, Form, Button } from "react-bootstrap";
+import Terms from "./Terms";
 
 const SummaryForm = () => {
-    const [disabled, setDisabled] = useState(true)
+  const [disabled, setDisabled] = useState(true);
 
   return (
     <Container>
       <Row>
         <Col>
-          <Form.Group>
-            <Form.Label htmlFor="termsCheckbox">Terms and conditions</Form.Label>
-            <Form.Check checked={!disabled} onChange={(e)=>setDisabled(!e.target.checked)} id="termsCheckbox" />
+          <Form.Group controlId="termsCheckbox">
+            <Terms />
+            <Form.Check
+              checked={!disabled}
+              onChange={(e) => setDisabled(!e.target.checked)}
+            />
           </Form.Group>
         </Col>
         <Col>
