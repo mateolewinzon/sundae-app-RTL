@@ -2,9 +2,9 @@ I have developed a simple project with the purpose of adding Jest-RTL testing to
 
 # Assignment:
 
-### For the following files, write tests to ensure that: 
+## For the following files, write tests to ensure that: 
 
-## SummaryForm.js 
+### SummaryForm.js 
 
 - Checkbox is unchecked by default
 - Checking checkbox enables button
