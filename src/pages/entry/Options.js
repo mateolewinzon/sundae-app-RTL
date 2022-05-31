@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import { Container } from "react-bootstrap";
-import ScoopOption from "./ScoopOption";
-import TopicOptions from "./ToppingOption";
-import Alert from "../../common/Alert";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { Container } from 'react-bootstrap';
+import ScoopOption from './ScoopOption';
+import TopicOptions from './ToppingOption';
+import Alert from '../../common/Alert';
 
 const Options = ({ optionType }) => {
   const [items, setItems] = useState([]);
@@ -21,7 +21,7 @@ const Options = ({ optionType }) => {
     GetItems();
   }, [optionType]);
 
-  const ItemComponent = optionType === "scoops" ? ScoopOption : TopicOptions;
+  const ItemComponent = optionType === 'scoops' ? ScoopOption : TopicOptions;
 
   
   const optionItems = items.map((item, key) => {

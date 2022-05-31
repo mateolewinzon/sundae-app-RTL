@@ -1,6 +1,6 @@
-import React from "react";
-import { Container } from "react-bootstrap";
-import Options from "./Options";
+import React from 'react';
+import { Container } from 'react-bootstrap';
+import Options from './Options';
 
 const OrderEntry = () => {
   return (
