@@ -1,8 +1,9 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen } from '../../../test-utils/testing-library-utills';
 import OrderEntry from '../OrderEntry';
 
 import { rest } from 'msw';
 import { server } from '../../../mocks/server';
+import { OrderDetailsProvider } from '../../../context/OrderDetails';
 
 test('If request error on scoops or toppings routes, an alert is shown ', async () => {
   server.resetHandlers(
