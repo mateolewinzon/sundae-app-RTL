@@ -12,7 +12,7 @@ const TermsPopover = () => {
 
 const Terms = () => {
   return (
-    <Form.Label htmlFor="termsCheckbox">
+    <Form.Label>
       I agree to
       <OverlayTrigger overlay={TermsPopover}>
         <span style={{ color: "blue" }}> terms and conditions</span>

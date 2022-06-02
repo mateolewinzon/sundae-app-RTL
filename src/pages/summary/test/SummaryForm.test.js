@@ -11,7 +11,7 @@ describe("Button is enabled and disabled by checkbox", () => {
     });
     expect(checkbox).not.toBeChecked();
 
-    const button = screen.getByRole("button", { name: /submit/i });
+    const button = screen.getByRole("button", { name: /confirm order/i });
     expect(button).toBeDisabled();
   });
 
@@ -21,7 +21,7 @@ describe("Button is enabled and disabled by checkbox", () => {
     const checkbox = screen.getByRole("checkbox", {
       name: /terms and conditions/i,
     });
-    const button = screen.getByRole("button", { name: /submit/i });
+    const button = screen.getByRole("button", { name: /confirm order/i });
 
     fireEvent.click(checkbox);
     expect(button).toBeEnabled();

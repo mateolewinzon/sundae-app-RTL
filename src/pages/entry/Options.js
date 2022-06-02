@@ -6,6 +6,7 @@ import TopicOptions from "./ToppingOption";
 import Alert from "../../common/Alert";
 import { pricePerItems } from "../../consts/prices";
 import { useOrderDetails } from "../../context/OrderDetails";
+import { formatCurrency } from "../../utils";
 
 const Options = ({ optionType }) => {
   const [items, setItems] = useState([]);
@@ -43,9 +44,9 @@ const Options = ({ optionType }) => {
   ) : (
     <Container>
       <Row>
-        <h3>{title}</h3>
+        <h2>{title}</h2>
       </Row>
-      <p>{pricePerItems[optionType]} each</p>
+      <p>{formatCurrency( pricePerItems[optionType])} each</p>
       <p>
         {title} subtotal: {orderDetails.totals[optionType]}
       </p>

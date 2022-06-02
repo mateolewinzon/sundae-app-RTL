@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-import { Container, Col, Row, Form, Button } from "react-bootstrap";
-import Terms from "./Terms";
+import React, { useState } from 'react';
+import { Container, Col, Row, Form, Button } from 'react-bootstrap';
+import Terms from './Terms';
 
-const SummaryForm = () => {
+const SummaryForm = ({ setStep }) => {
   const [disabled, setDisabled] = useState(true);
 
   return (
     <Container>
       <Row>
         <Col>
-          <Form.Group controlId="termsCheckbox">
+          <Form.Group controlId='termsCheckbox'>
             <Terms />
             <Form.Check
               checked={!disabled}
@@ -18,7 +18,9 @@ const SummaryForm = () => {
           </Form.Group>
         </Col>
         <Col>
-          <Button disabled={disabled}>Submit</Button>
+          <Button onClick={() => setStep('confirmation')} disabled={disabled}>
+            Confirm order
+          </Button>
         </Col>
       </Row>
     </Container>

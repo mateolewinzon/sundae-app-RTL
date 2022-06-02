@@ -1,10 +1,10 @@
-I have developed a simple project with the purpose of adding Jest-RTL testing to my skillset.  
+I have developed a simple project with the purpose of adding Jest-RTL testing to my skillset.
 
 # Assignment:
 
-## For the following components, write tests to ensure that: 
+## Write tests to ensure that:
 
-### SummaryForm.js 
+### SummaryForm.js
 
 - Checkbox is unchecked by default
 - Checking checkbox enables button
@@ -18,9 +18,23 @@ I have developed a simple project with the purpose of adding Jest-RTL testing to
 - Toppings and scoops Images are rendered correctly
 - If the requests throw an error, display an alert
 - Initial grand total is $0.00
-- Scoop subtotal updates correctly when scoops change. 
-- Each scoop costs $2
+- Scoop subtotal updates correctly when scoops change.
+- Each scoop costs $2.00
 - Toppings subtotal updates correctly when toppings change.
-- Each topping costs $1
+- Each topping costs $1.00
+
+### OrderEntry.js
+
+- Grand total starts as $0.00
 - grand total updates correctly when scoops or toppings change
 
+### App.js, (happy path test / full app functional test)
+
+- Select a combination of scoops and toppings
+- Verify subtotals and grand total are correct
+- Click on terms and conditions
+- Click button to place order
+- See an order summary with an order number and the correct totals and grand totals
+- Click on confirmation button
+- Uppon order confirmed page, click on "start new order"
+- Values are back on default
