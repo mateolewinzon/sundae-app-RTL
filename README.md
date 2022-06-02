@@ -32,9 +32,9 @@ I have developed a simple project with the purpose of adding Jest-RTL testing to
 
 - Select a combination of scoops and toppings
 - Verify subtotals and grand total are correct
-- Click on terms and conditions
 - Click button to place order
 - See an order summary with an order number and the correct totals and grand totals
+- Click on terms and conditions checkbox
 - Click on confirmation button
 - Uppon order confirmed page, click on "start new order"
-- Values are back on default
+- Back to entry page and values are back on default
