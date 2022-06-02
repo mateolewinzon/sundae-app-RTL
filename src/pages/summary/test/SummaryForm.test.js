@@ -32,7 +32,7 @@ describe("Button is enabled and disabled by checkbox", () => {
 });
 
 test("Popover responds to hover", () => {
-  render(<SummaryForm />);
+  render(<SummaryForm setStep={jest.fn()}/>);
 
   const nullPopover = screen.queryByText(
     /no real ice cream will be delivered/i

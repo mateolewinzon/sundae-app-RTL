@@ -17,7 +17,7 @@ test('If request error on scoops or toppings routes, an alert is shown ', async 
     )
   );
 
-  render(<OrderEntry />);
+  render(<OrderEntry setStep={jest.fn()}/>);
 
   const alerts = await screen.findAllByRole('alert');
   expect(alerts).toHaveLength(2); //one error for scoops, one for toppings
